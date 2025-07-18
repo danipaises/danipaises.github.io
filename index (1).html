@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domínio Desativado</title>
+    <!-- Importando o Tailwind CSS para estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importando a fonte Inter do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Definindo a fonte Inter como padrão */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900">
+
+    <!-- Container principal que centraliza o conteúdo na tela -->
+    <div class="min-h-screen flex items-center justify-center p-4">
+        
+        <!-- Card de aviso -->
+        <div class="bg-white dark:bg-gray-800 shadow-2xl rounded-2xl p-8 max-w-md w-full text-center">
+            
+            <!-- Ícone de aviso -->
+            <div class="mx-auto mb-6 h-16 w-16 flex items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900">
+                <svg class="h-8 w-8 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </div>
+
+            <!-- Título principal -->
+            <h1 class="text-3xl font-bold text-gray-800 dark:text-white mb-4">
+                Nós trocamos de domínio!
+            </h1>
+
+            <!-- Mensagem explicativa -->
+            <p class="text-gray-600 dark:text-gray-300 mb-8">
+                Atualizamos nosso endereço na web. Para continuar navegando, por favor, acesse nosso novo site clicando no botão abaixo.
+            </p>
+
+            <!-- Botão de redirecionamento com JavaScript -->
+            <button 
+               onclick="window.open('https://danipaises.com.br', '_blank')"
+               class="inline-block w-full px-6 py-4 bg-blue-600 text-white font-bold text-lg rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-transform transform hover:scale-105 cursor-pointer">
+                Ir para o novo domínio
+            </button>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
